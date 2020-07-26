@@ -43,3 +43,19 @@ else
 endif
 
 inoremap jk <ESC>
+
+" Move line UP/DOWN
+nnoremap <A-j> :move +1<CR>==
+nnoremap <A-Down> :move +1<CR>==
+nnoremap <A-k> :move -2<CR>==
+nnoremap <A-Up> :move -2<CR>==
+inoremap <A-j> <Esc>:move +1<CR>==gi
+inoremap <A-Down> <Esc>:move +1<CR>==gi
+inoremap <A-k> <Esc>:move -2<CR>==gi
+inoremap <A-Up> <Esc>:move -2<CR>==gi
+
+" Copy line UP/DOWN
+nnoremap <A-S-Down> <Leader>yyp<CR>==
+nnoremap <A-S-Up> <Leader>yyP<CR>==
+inoremap <A-S-Down> <Esc><Leader>yyp<CR>==gi
+inoremap <A-S-Up> <Esc><Leader>yyP<CR>==gi
