@@ -14,5 +14,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'ryanoasis/vim-devicons'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
