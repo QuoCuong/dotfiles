@@ -44,6 +44,9 @@ endif
 
 inoremap jk <ESC>
 
+" Delete current buffer
+nnoremap <C-w> :bd<CR>
+
 " Move line UP/DOWN
 nnoremap <A-j> :move +1<CR>==
 nnoremap <A-Down> :move +1<CR>==
