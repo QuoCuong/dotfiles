@@ -1,8 +1,8 @@
 "NERDTree
 map <C-b> :NERDTreeToggle<CR>
 map <C-i> :NERDTreeFind<CR>
-vmap ++ <plug>NERDCommenterToggle
-map ++ <plug>NERDCommenterToggle
+vmap <C-_> <plug>NERDCommenterToggle
+map <C-_> <plug>NERDCommenterToggle
 let g:NERDTreePatternMatchHighlightFullName = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
@@ -28,10 +28,7 @@ let g:airline#extensions#ctrlp = 1
 
 "Ctrlp
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/](node_modules|build|public|lib|dist)|(\.(git|svn))$',
-    \ 'file': 'tags\|tags.lock\|tags.temp',
-\ }
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 "EasyMotion
 nmap <silent> gw <Plug>(easymotion-overwin-f2)
