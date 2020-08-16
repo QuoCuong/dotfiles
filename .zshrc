@@ -1,4 +1,4 @@
-export ZSH_TMUX_AUTOCONNECT = false
+export ZSH_TMUX_AUTOCONNECT=false
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
