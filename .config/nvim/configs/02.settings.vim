@@ -15,6 +15,7 @@ set tabstop=4
 set softtabstop=0
 set shiftwidth=4
 set number relativenumber
+set cursorline
 
 " TextEdit might fail if hidden is not set.
 set hidden
