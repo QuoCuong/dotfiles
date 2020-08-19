@@ -17,6 +17,9 @@ set shiftwidth=4
 set number relativenumber
 set cursorline
 
+" Toggle Relative Number
+nnoremap <silent> <leader>nb :set relativenumber!<CR>
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
