@@ -14,11 +14,8 @@ set hlsearch
 set tabstop=4
 set softtabstop=0
 set shiftwidth=4
-set number relativenumber
+set number
 set cursorline
-
-" Toggle Relative Number
-nnoremap <silent> <leader>nb :set relativenumber!<CR>
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -48,8 +45,16 @@ endif
 
 inoremap jk <ESC>
 
-" Delete current buffer
+" Toggle Relative Number
+nnoremap <silent> <leader>nb :set relativenumber!<CR>
+
+" Buffer shorcuts
+nnoremap <A-h> :bp<CR>
+nnoremap <A-l> :bn<CR>
 nnoremap <C-w> :bd<CR>
+
+" Remove search
+nnoremap <silent> ,<space> :noh<CR>
 
 " Move line UP/DOWN
 nnoremap <A-j> :move +1<CR>==
