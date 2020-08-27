@@ -15,14 +15,15 @@ let g:NERDTreeShowBookmarks = 1
 
 "Theme
 syntax enable
-set background=dark
+"set background=dark
 highlight Normal ctermbg=None
-colorscheme tender
+set t_Co=256
+set t_ut=
+colorscheme onedark
 set termguicolors
-let g:gruvbox_contrast_dark = 'hard'
 
 "Vim-Airline
-let g:airline_theme = 'gruvbox'
+let g:airline_theme = 'onedark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#ctrlp = 1
 
