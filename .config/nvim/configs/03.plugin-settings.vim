@@ -14,17 +14,16 @@ let g:NERDTreeIgnore = ['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pyca
 let g:NERDTreeShowBookmarks = 1
 
 "Theme
-syntax enable
-"set background=dark
 highlight Normal ctermbg=None
 set t_Co=256
 set t_ut=
-colorscheme onedark
+syntax enable
+colorscheme gruvbox
 set termguicolors
 
 "Vim-Airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'onedark'
+let g:airline_theme = 'gruvbox'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#ctrlp = 1
 
