@@ -3,9 +3,5 @@ set fish_greeting
 set TERM tmux-256color
 set EDITOR nvim
 
-if test -n "$DESKTOP_SESSION"
-    set (gnome-keyring-daemon --start | string split "=")
-end
-
 starship init fish | source
 zoxide init fish | source
