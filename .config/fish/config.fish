@@ -3,5 +3,4 @@ set fish_greeting
 set TERM tmux-256color
 set EDITOR nvim
 
-starship init fish | source
 zoxide init fish | source
