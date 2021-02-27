@@ -430,6 +430,9 @@ for_window [class="Vivaldi-stable"] focus
 #exec --no-startup-id spotify
 for_window [class="Spotify"] focus
 
+# UNIKEY
+exec --no-startup-id ibus-daemon -drx
+exec --no-startup-id "setxkbmap -model pc105 -layout us,vi -option grp: alt_shift_toggle"
 
 
 # TRAY APPLICATIONS
