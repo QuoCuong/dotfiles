@@ -552,6 +552,9 @@ bindsym control+mod1+p exec --no-startup-id pamac-manager
 #xkill
 bindsym --release $mod+Escape exec xkill
 
+#flameshot
+bindsym --release Shift+Print exec --no-startup-id flameshot gui
+
 #workspace related
 
 #workspace 1 related
