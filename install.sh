@@ -1,10 +1,13 @@
 #!/usr/bin/sh
 
 echo "Installing..."
-pacman -S tmux
+pacman -S tmux python python-pip
+
+echo "Installing pynvim module..."
+python -m pip install pynvim
 
 echo "Installing fira code nerd font..."
-yay -S nerd-fonts-fira-code
+yay -S zoxide exa nerd-fonts-fira-code
 
 echo "Installing VIM PLUG..."
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -12,3 +15,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 echo "Copy config files"
 cp -r ./.config/* ~/.config
+
+echo "Copy tmux config"
+cp ./.config/.tmux.conf ~/
+
+echo "Restarting i3 config"
+i3-msg restart
