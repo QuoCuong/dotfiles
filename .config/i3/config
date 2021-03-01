@@ -430,9 +430,11 @@ for_window [class="Vivaldi-stable"] focus
 #exec --no-startup-id spotify
 for_window [class="Spotify"] focus
 
-# Run ibus daemon
+#Run ibus daemon
 exec --no-startup-id ibus-daemon -drx
 
+#Dunst notification
+exec --no-startup-id dunst
 
 # TRAY APPLICATIONS
 
