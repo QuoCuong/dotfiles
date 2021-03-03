@@ -7,7 +7,7 @@ echo "Installing pynvim module..."
 python -m pip install pynvim
 
 echo "Installing fira code nerd font..."
-yay -S zoxide exa nerd-fonts-fira-code
+yay -S zoxide exa nerd-fonts-fira-code tamzen-font
 
 echo "Installing VIM PLUG..."
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
