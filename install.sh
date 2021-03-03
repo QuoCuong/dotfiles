@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 
 echo "Installing..."
-pacman -S tmux python python-pip
+pacman -S tmux python python-pip xclip docker docker-compose
 
 echo "Installing pynvim module..."
 python -m pip install pynvim

@@ -69,7 +69,8 @@ set $right semicolon
 #exec --no-startup-id xrandr --output DVI-1 --right-of DVI-0 --auto
 #exec --no-startup-id xrandr --output DVI-D-1 --right-of DVI-I-1 --auto
 #exec --no-startup-id xrandr --output HDMI-2 --right-of HDMI-1 --auto
-exec --no-startup-id xrandr --output HDMI2 --right-of HDMI1 --auto
+#exec --no-startup-id xrandr --output HDMI2 --right-of HDMI1 --auto
+exec --no-startup-id xrandr --output DP1 --right-of HDMI2
 
 
 # my current setup
@@ -90,8 +91,8 @@ exec --no-startup-id xrandr --output HDMI2 --right-of HDMI1 --auto
 #set $firstMonitor HDMI-1
 #set $secondMonitor HDMI-2
 
-set $firstMonitor HDMI1
-set $secondMonitor HDMI2
+set $firstMonitor HDMI2
+set $secondMonitor DP1
 
 workspace 1 output $firstMonitor
 workspace 2 output $firstMonitor
@@ -135,7 +136,7 @@ bindsym $mod+Shift+0 move container to workspace 10; workspace 10
 #####################################################################################################################
 
 # start dmenu
-bindsym $mod+shift+d exec --no-startup-id dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+bindsym $mod+d exec --no-startup-id dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
 # gmrun
 bindsym mod1+F2 exec --no-startup-id gmrun
@@ -699,16 +700,16 @@ for_window [class="Terminator"] focus
 bindsym mod1+t exec --no-startup-id variety -t
 # next wallpaper
 bindsym mod1+n exec --no-startup-id variety -n
-bindsym mod1+Right exec --no-startup-id variety -n
+#bindsym mod1+Right exec --no-startup-id variety -n
 # previous wallpaper
 bindsym mod1+p exec --no-startup-id variety -p
-bindsym mod1+Left exec --no-startup-id variety -p
+#bindsym mod1+Left exec --no-startup-id variety -p
 # favorite wallpaper
 bindsym mod1+f exec --no-startup-id variety -f
 # pause wallpaper
-bindsym mod1+Up exec --no-startup-id variety --pause
+#bindsym mod1+Up exec --no-startup-id variety --pause
 # resume wallpaper
-bindsym mod1+Down exec --no-startup-id variety --resume
+#bindsym mod1+Down exec --no-startup-id variety --resume
 
 
 #####################################################################################################################
