@@ -17,7 +17,7 @@ echo "Copy config files"
 cp -r ./.config/* ~/.config
 
 echo "Copy tmux config"
-cp ./.config/.tmux.conf ~/
+cp ./.tmux.conf ~/
 
 echo "Restarting i3 config"
 i3-msg restart
