@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/bundle')
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'morhetz/gruvbox'
