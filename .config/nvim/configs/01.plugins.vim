@@ -1,6 +1,10 @@
 call plug#begin('~/.config/nvim/bundle')
 
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"LSP
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+"Plug 'glepnir/lspsaga.nvim'
+
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'morhetz/gruvbox'

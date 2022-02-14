@@ -34,4 +34,3 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 "EasyMotion
 nmap <silent> gw <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
-
