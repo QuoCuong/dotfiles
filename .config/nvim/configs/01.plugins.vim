@@ -15,6 +15,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'akinsho/bufferline.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 
 " For vsnip users.
 Plug 'hrsh7th/cmp-vsnip'
