@@ -2,7 +2,7 @@ let mapleader = "\<Space>"
 filetype plugin on
 filetype plugin indent on
 
-autocmd BufEnter * :set scroll=10
+"autocmd BufEnter * :set scroll=10
 syntax on
 
 set encoding=UTF-8
@@ -25,14 +25,14 @@ set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+"set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=300
+"set updatetime=300
 
 " Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
+"set shortmess+=c
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
@@ -47,11 +47,6 @@ inoremap jk <ESC>
 
 " Toggle Relative Number
 nnoremap <silent> <leader>nb :set relativenumber!<CR>
-
-" Buffer shorcuts
-nnoremap <A-h> :bp<CR>
-nnoremap <A-l> :bn<CR>
-nnoremap <C-w> :bd<CR>
 
 " Remove search
 nnoremap <silent> ,<space> :noh<CR>
