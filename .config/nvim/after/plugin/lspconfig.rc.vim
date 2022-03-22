@@ -1,8 +1,13 @@
+if !exists('g:lspconfig')
+	finish
+endif
+
+lua <<EOF
 local lspconfig = require('lspconfig')
-local treesitter = require('nvim-treesitter.configs')
 
 local buf_map = function(bufnr, mode, lhs, rhs, opts)
     vim.api.nvim_buf_set_keymap(bufnr, mode, lhs, rhs, opts or {
+		noremap = true,
         silent = true,
     })
 end
@@ -40,11 +45,6 @@ end
 
 lspconfig.tsserver.setup {
 	on_attach = on_attach,
+	filetypes = { "typescript", "typescriptreact" },
 }
-
-treesitter.setup {
-	highlight = {
-		enable = true,
-	},
-}
-
+EOF
