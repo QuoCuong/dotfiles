@@ -1,31 +1,32 @@
 let mapleader = "\<Space>"
+
 filetype plugin on
 filetype plugin indent on
 
-"autocmd BufEnter * :set scroll=10
-syntax on
-
+syntax enable
 set encoding=UTF-8
+set hlsearch
+
 set mouse=a
-
-"set incsearch
-"set hlsearch
-
-"set tabstop=4
-"set softtabstop=0
-"set shiftwidth=4
+set expandtab
 set number
 set cursorline
-
-" TextEdit might fail if hidden is not set.
-set hidden
+set title
+set autoindent
+set smarttab
+set shiftwidth=2
+set tabstop=2
+set ai "Auto indent
+set si "Smart indent
+set nowrap "No Wrap lines
+set backspace=start,eol,indent
 
 " Some servers have issues with backup files, see #649.
 set nobackup
-set nowritebackup
+"set nowritebackup
 
 " Give more space for displaying messages.
-"set cmdheight=2
+set cmdheight=1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -36,12 +37,12 @@ set nowritebackup
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
-if has("patch-8.1.1564")
+"if has("patch-8.1.1564")
   " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+"  set signcolumn=number
+"else
+"  set signcolumn=yes
+"endif
 
 inoremap jk <ESC>
 

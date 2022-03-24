@@ -2,7 +2,8 @@ call plug#begin('~/.config/nvim/bundle')
 
 "LSP
 Plug 'neovim/nvim-lspconfig'
-Plug 'glepnir/lspsaga.nvim'
+"Plug 'glepnir/lspsaga.nvim'
+Plug 'tami5/lspsaga.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'

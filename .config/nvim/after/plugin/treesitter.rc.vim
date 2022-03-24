@@ -23,6 +23,7 @@ require('nvim-treesitter.configs').setup {
 		"css",
 		"scss",
 		"prisma",
+    "go",
 	},
 }
 EOF

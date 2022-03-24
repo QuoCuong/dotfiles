@@ -29,7 +29,7 @@ cmp.setup({
     end,
   },
   formatting = {
-	format = lspkind.cmp_format({
+    format = lspkind.cmp_format({
       mode = 'symbol', -- show only symbol annotations
       maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
 
@@ -42,51 +42,51 @@ cmp.setup({
     })
   },
   mapping = {
-	["<Tab>"] = cmp.mapping(function(fallback)
-	  if cmp.visible() then
-		cmp.select_next_item()
-	  elseif vim.fn["vsnip#available"](1) == 1 then
-		feedkey("<Plug>(vsnip-expand-or-jump)", "")
-	  elseif has_words_before() then
-		cmp.complete()
-	  else
-		fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
-	  end
-	end, { "i", "s" }),
-	["<S-Tab>"] = cmp.mapping(function()
-	  if cmp.visible() then
-		cmp.select_prev_item()
-	  elseif vim.fn["vsnip#jumpable"](-1) == 1 then
-	    feedkey("<Plug>(vsnip-jump-prev)", "")
-	  end
-	end, { "i", "s" }),
-	['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
+    ["<Tab>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_next_item()
+      elseif vim.fn["vsnip#available"](1) == 1 then
+        feedkey("<Plug>(vsnip-expand-or-jump)", "")
+      elseif has_words_before() then
+        cmp.complete()
+      else
+        fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
+      end
+    end, { "i", "s" }),
+    ["<S-Tab>"] = cmp.mapping(function()
+      if cmp.visible() then
+        cmp.select_prev_item()
+      elseif vim.fn["vsnip#jumpable"](-1) == 1 then
+        feedkey("<Plug>(vsnip-jump-prev)", "")
+      end
+    end, { "i", "s" }),
+    ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
     ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
     ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-	['<C-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
-	['<C-e>'] = cmp.mapping({
-	  i = cmp.mapping.abort(),
-	  c = cmp.mapping.close(),
-	}),
-	['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+    ['<C-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
+    ['<C-e>'] = cmp.mapping({
+      i = cmp.mapping.abort(),
+      c = cmp.mapping.close(),
+    }),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
   },
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-	{ name = 'vsnip' }, -- For vsnip users.
+    { name = 'vsnip' }, -- For vsnip users.
     -- { name = 'luasnip' }, -- For luasnip users.
     -- { name = 'ultisnips' }, -- For ultisnips users.
     -- { name = 'snippy' }, -- For snippy users.
   }, {
-	{ name = 'buffer' },
+    { name = 'buffer' },
   })
 })
 
 -- Set configuration for specific filetype.
 cmp.setup.filetype('gitcommit', {
   sources = cmp.config.sources({
-	{ name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
+    { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
   }, {
-	{ name = 'buffer' },
+    { name = 'buffer' },
   })
 })
 
