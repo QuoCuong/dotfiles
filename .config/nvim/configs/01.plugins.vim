@@ -19,6 +19,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'b3nj5m1n/kommentary'
 Plug 'windwp/nvim-autopairs'
+Plug 'jose-elias-alvarez/null-ls.nvim'
 
 " For vsnip users.
 Plug 'hrsh7th/cmp-vsnip'
