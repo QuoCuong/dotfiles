@@ -18,6 +18,7 @@ Plug 'akinsho/bufferline.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'b3nj5m1n/kommentary'
+Plug 'windwp/nvim-autopairs'
 
 " For vsnip users.
 Plug 'hrsh7th/cmp-vsnip'
