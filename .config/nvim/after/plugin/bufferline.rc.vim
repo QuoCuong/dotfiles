@@ -1,5 +1,7 @@
 nnoremap <silent><A-l> :BufferLineCycleNext<CR>
 nnoremap <silent><A-h> :BufferLineCyclePrev<CR>
+nnoremap <silent><A-S-l> :BufferLineMoveNext<CR>
+nnoremap <silent><A-S-h> :BufferLineMovePrev<CR>
 nnoremap <C-w> :bd<CR>
 
 lua << EOF
