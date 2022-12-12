@@ -9,10 +9,8 @@ lua << EOF
 local nvim_tree = require('nvim-tree')
 
 nvim_tree.setup {
-  auto_close = false,
   auto_reload_on_write = true,
   disable_netrw = false,
-  hide_root_folder = false,
   hijack_cursor = false,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
@@ -23,7 +21,6 @@ nvim_tree.setup {
   update_cwd = false,
   view = {
     width = 30,
-    height = 30,
     side = "left",
     preserve_window_proportions = false,
     number = false,
